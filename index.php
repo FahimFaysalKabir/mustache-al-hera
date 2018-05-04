@@ -6,9 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title><?php bloginfo('name'); ?></title>
-
-	<title>Mustache Enthusiast</title>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/style.css">
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile.css" media="screen and (max-width : 568px)">
 	<script type="text/javascript" src="js/mobile.js"></script>
@@ -19,11 +17,7 @@
 
 		<a href="http://localhost/wordpress" >
 			<img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="">
-
-		<a href="index.html" class="logo">
-			<img src="<?php echo get_template_directory_uri();?>/images/logo.jpg" alt="">
-
-		</a>
+    </a>
 		<ul id="navigation">
 			<li class="selected">
 				<a href="index.html">home</a>
@@ -46,10 +40,7 @@
 		<div id="featured">
 
 			<img src="<?php echo get_template_directory_uri(); ?>/images/the-beacon.jpg" alt="">
-
-			<img src="<?php echo get_template_directory_uri();?>/images/the-beacon.jpg" alt="">
-
-			<div>
+      <div>
 				<h2>the beacon to all mankind</h2>
 				<span>Our website templates are created with</span>
 				<span>inspiration, checked for quality and originality</span>
@@ -63,7 +54,7 @@
 
 					<img src="<?php echo get_template_directory_uri(); ?>/images/the-father.jpg" alt="">
 
-					<img src="<?php echo get_template_directory_uri();?>/images/the-father.jpg" alt="">
+					
 
 					<span>the father</span>
 				</a>
@@ -73,7 +64,7 @@
 
 					<img src="<?php echo get_template_directory_uri(); ?>/images/the-actor.jpg" alt="">
 
-					<img src="<?php echo get_template_directory_uri();?>/images/the-actor.jpg" alt="">
+
 
 					<span>the actor</span>
 				</a>
@@ -83,7 +74,7 @@
 
 					<img src="<?php echo get_template_directory_uri(); ?>/images/the-nerd.jpg" alt="">
 
-					<img src="<?php echo get_template_directory_uri();?>/images/the-nerd.jpg" alt="">
+
 
 					<span>the nerd</span>
 				</a>
