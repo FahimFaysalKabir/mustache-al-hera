@@ -4,15 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mustache Enthusiast</title>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('Stylesheet_url'); ?>/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('Stylesheet_url'); ?>/css/mobile.css" media="screen and (max-width : 568px)">
+	<title><?php bloginfo('name'); ?></title>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?> /css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile.css" media="screen and (max-width : 568px)">
 	<script type="text/javascript" src="js/mobile.js"></script>
 </head>
 <body>
 	<div id="header">
-		<a href="index.html" class="logo">
-			<img src="images/logo.jpg" alt="">
+		<a href="http://localhost/wordpress" >
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="">
 		</a>
 		<ul id="navigation">
 			<li class="selected">
@@ -34,7 +34,7 @@
 	</div>
 	<div id="body">
 		<div id="featured">
-			<img src="images/the-beacon.jpg" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/the-beacon.jpg" alt="">
 			<div>
 				<h2>the beacon to all mankind</h2>
 				<span>Our website templates are created with</span>
@@ -46,19 +46,19 @@
 		<ul>
 			<li>
 				<a href="gallery.html">
-					<img src="images/the-father.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/the-father.jpg" alt="">
 					<span>the father</span>
 				</a>
 			</li>
 			<li>
 				<a href="gallery.html">
-					<img src="images/the-actor.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/the-actor.jpg" alt="">
 					<span>the actor</span>
 				</a>
 			</li>
 			<li>
 				<a href="gallery.html">
-					<img src="images/the-nerd.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/the-nerd.jpg" alt="">
 					<span>the nerd</span>
 				</a>
 			</li>
