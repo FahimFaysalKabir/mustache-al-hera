@@ -12,6 +12,25 @@
 				<a href="blog-single-post.html" class="more">read more</a>
 			</div>
 		</div>
+		<div id="post-it">
+		<h1>HELLO WORLD</h1>
+		<P>
+			<?php if (have_posts()) : ?>
+						<?php while (have_posts()) :the_post(); ?>
+
+						<div class="post_single">
+
+
+					<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+					<?php echo excerpt('60');?>
+
+
+								</div>
+
+								<?php endwhile; ?>
+								<?php endif; ?>
+</P>
+		</div>
 		<ul>
 			<li>
 				<a href="gallery.html">
