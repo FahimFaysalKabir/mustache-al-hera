@@ -18,9 +18,14 @@ function excerpt($num) {
 $limit = $num+1;
 $excerpt = explode(' ', get_the_excerpt(), $limit);
 array_pop($excerpt);
-$excerpt = implode(" ",$excerpt)." <a href='" .get_permalink($post->ID) ." ' class='".readmore."'>Read More</a>";
+$excerpt = implode(" ",$excerpt)." <a href='" .get_permalink($post->ID) ." ' class='".readmore."'>READ THIS</a>";
 echo $excerpt;
 }
+
+// This code for add Thumblain Image To Blog Page
+add_theme_support( 'post-thumbnails', array( 'post' ));
+set_post_thumbnail_size( 200, 200, true);
+add_image_size( 'post-image', 150, 150, true);
 
 
 

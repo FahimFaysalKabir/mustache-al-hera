@@ -34,6 +34,29 @@
 	</div>
 	<div id="body">
 		<h1><span>blog</span></h1>
+		<div id="post-it">
+		<h1>HELLO WORLD</h1>
+		<P>
+			<?php if (have_posts()) : ?>
+						<?php while (have_posts()) :the_post(); ?>
+
+						<div class="post_single">
+
+
+					<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+					<div class="post_info">
+		Posted In: <?php the_category(', '); ?> | Posted On: <?php the_time('M d, Y'); ?> <?php comments_popup_link('No comment', '1 comment', '% comments'); ?>
+		</div>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-image', array('class' =>'post-thumb')); ?></a>
+		<?php echo excerpt('60');?>
+
+
+								</div>
+
+								<?php endwhile; ?>
+								<?php endif; ?>
+</P>
+		</div>
 		<div>
 			<ul>
 				<li>
