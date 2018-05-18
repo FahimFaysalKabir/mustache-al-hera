@@ -12,7 +12,8 @@
 				<a href="blog-single-post.html" class="more">read more</a>
 			</div>
 		</div>
-		 
+		<?php get_template_part('post-loop'); ?>
+
 		<ul>
 			<li>
 				<a href="gallery.html">
