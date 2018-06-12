@@ -27,6 +27,14 @@ add_theme_support( 'post-thumbnails', array( 'post' ));
 set_post_thumbnail_size( 200, 200, true);
 add_image_size( 'post-image', 150, 150, true);
 
+/*theme option*/
+add_filter( 'ot_show_pages', '__return_false' );
+add_filter( 'ot_show_new_layout', '__return_false' );
+add_filter( 'ot_theme_mode', '__return_true' );
+include_once( 'option-tree/ot-loader.php' );
+include_once( 'includes/theme-options.php' );
+
+
 
 
 
